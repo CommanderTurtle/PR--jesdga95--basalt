@@ -12,6 +12,9 @@
 namespace basalt::program {
 
 struct Options {
+    // ---- Jev: opt-in resident-model scoring ----
+    int jev = 0;
+    // ---- end Jev ----
     std::string model;                ///< --model: the .basalt file every loader reads from
     std::string dump_hc8;             ///< --dump-hc8: write the 8-bit hyper-connection copies here, then exit
     std::vector<int64_t> tokens;      // the prompt, PRE-TOKENIZED
